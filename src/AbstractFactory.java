@@ -1,3 +1,4 @@
 public abstract class AbstractFactory {
-    void print();
+    void printScreen();
+    void printFile();
 }
