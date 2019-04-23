@@ -1,7 +1,9 @@
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.nio.file.Files;
 import java.nio.charset.Charset;
 import java.io.PrintWriter;
+import java.io.IOException;
 
 public class ConcreteFactory extends AbstractFactory{
 
@@ -12,7 +14,7 @@ public class ConcreteFactory extends AbstractFactory{
 
     @Override
     public void printFile() {
-        Path path1 = Paths.get("teste1.txt");
+        Path path1 = Paths.get("hello.txt");
         // defaultCharset retorna a codificação padrão de textos (usualmente UTF-8)
         try (PrintWriter writer = new PrintWriter(Files.newBufferedWriter(path1, Charset.defaultCharset())))
         {
