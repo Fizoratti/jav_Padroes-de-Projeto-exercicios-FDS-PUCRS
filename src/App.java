@@ -6,16 +6,13 @@ public class App {
     public static void main(String args[]) {
 
         AbstractFactory factory = new ConcreteFactory();
-        factory.printScreen();
-        factory.printFile();
 
         System.out.println("(1) na tela ou (2) num arquivo");
 
-        String option = (new Scanner(System.in)).next();
+        int option = (new Scanner(System.in)).nextInt();
 
-        ler.close();
-
-        System.out.println(texto);
-
+        if(option == 1) System.out.println("Hello World");
+        if(option == 2) factory.printFile();
+        
     }
 }
