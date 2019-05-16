@@ -8,6 +8,8 @@ public class App {
 
         AbstractFactory factory = new ConcreteFactory();
 
+        System.out.println("# Exercício 1.1");
+
         System.out.println("(1) na tela ou (2) num arquivo");
 
         /* Pulando a opção de escolher o método
