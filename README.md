@@ -87,9 +87,14 @@ Patrick Naughton
 
 #### 3.2.Exercício:
 Crie dois arquivos texto em um diretório qualquer:
-| publico.txt | confidencial.txt |
-| ----------- | ----------- |
-```Estas são informações públicas sobre qualquer coisa. Todo mundo pode ver este arquivo.``` | ```Estas são informações confidenciais, o que significa que você provavelmente sabe a palavra secreta!```
+```
+# publico.txt
+Estas são informações públicas sobre qualquer coisa. Todo mundo pode ver este arquivo.
+```
+```
+# confidencial.txt
+Estas são informações confidenciais, o que significa que você provavelmente sabe a palavra secreta!
+```
 
 Usando o padrão Factory Method, crie duas provedoras de informação: uma que retorna informações
 públicas e outra que retorna informações confidenciais. Utilize o provedor confidencial se o usuário informar
@@ -108,22 +113,23 @@ Escreva, compile e execute o programa abaixo. Em seguida, troque sua implementa�
 Incremental seja Singleton. Execute novamente e veja os resultados.
 ```java
 class Incremental {
-private static int count = 0;
-private int numero;
-public Incremental() {
-numero = ++count;
+   private static int count = 0;
+   private int numero;
+   public Incremental() {
+      numero = ++count;
+   }
+   public String toString() {
+      return "Incremental " + numero;
+   }
 }
-public String toString() {
-return "Incremental " + numero;
-}
-}
+
 public class TesteIncremental {
-public static void main(String[] args) {
-for (int i = 0; i < 10; i++) {
-Incremental inc = new Incremental();
-System.out.println(inc);
-}
-}
+   public static void main(String[] args) {
+      for (int i = 0; i < 10; i++) {
+         Incremental inc = new Incremental();
+         System.out.println(inc);
+      }
+   }
 }
 ```
 
