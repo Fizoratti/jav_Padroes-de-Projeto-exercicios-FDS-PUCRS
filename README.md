@@ -1,8 +1,8 @@
 ﻿
 ## Branches
 1. Abstract Factory
-[x] exercicio1.1
-[ ] exercicio1.2
+- [x] exercicio1.1
+- [ ] exercicio1.2
  
  
  ## Enunciado - 09/04
