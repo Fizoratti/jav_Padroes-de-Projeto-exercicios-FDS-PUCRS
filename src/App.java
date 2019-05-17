@@ -9,8 +9,6 @@ public class App {
     public static void main(String args[]) {
         System.out.println("# Exercicio 1.2");
 
-        AbstractFactory factory = new ConcreteFactory();
-
         int dia = Integer.parseInt(args[0]);
         int mes = Integer.parseInt(args[1]);
         int ano = Integer.parseInt(args[2]);
@@ -27,6 +25,11 @@ public class App {
             e.printStackTrace();
         }
 
+        AbstractFactory factory = new ConcreteFactory();
+
+        
+
+        // imprima os ingredientes da pizza que é feita no dia ou, se a pizzaria estiver fechada
 
 
         
