@@ -6,6 +6,10 @@ import java.util.Date;
 import java.text.ParseException;
 
 public class App {
+    private static Date data;
+    private static String status;
+    private static Pizzaiolo pizzaiolo1, pizzaiolo2;
+
     public static void main(String args[]) {
         System.out.println("# Exercicio 1.2");
 
@@ -16,7 +20,7 @@ public class App {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-mm-yyyy");
 
         try {
-            Date data = simpleDateFormat.parse(dia+"-"+mes+"-"+ano);
+            data = simpleDateFormat.parse(dia+"-"+mes+"-"+ano);
             String dataString = simpleDateFormat.format(data);
             System.out.println("Data: "+dataString);
         }
@@ -27,28 +31,42 @@ public class App {
 
         AbstractFactory factory = new ConcreteFactory();
 
+        factory.start();
 
+        factory.espiarPizzaria();
 
-        // imprima os ingredientes da pizza que é feita no dia ou, se a pizzaria estiver fechada
+        factory.mostrarIngred();
 
-
-        
-
-        // System.out.println("(1) na tela ou (2) num arquivo");
-
-        // /* Pulando a opção de escolher o método
-        // int option = (new Scanner(System.in)).nextInt();
-        // */
-
-        // System.out.println("Gerando opcao randomica...");
-
-        // double option = Math.random();
-
-        // if(option > 0.5) factory.printScreen();
-        // if(option <= 0.5) factory.printFile();
-
-        // if(option > 0.5) System.out.println("Escrito na tela.");
-        // if(option <= 0.5) System.out.println("Escrito no arquivo.");
         
     }
+
+    public static Date getDate() {
+        return data;
+    }
+
+    public static void setStatus(String s) {
+        status = s;
+    }
+
+    public static String getStatus() {
+        return status;
+    }
+
+    public static void setPizzaiolo1(Pizzaiolo p) {
+        pizzaiolo1 = p;
+    }
+
+    public static Pizzaiolo getPizzaiolo1() {
+        return pizzaiolo1;
+    }
+
+    public static void setPizzaiolo2(Pizzaiolo p) {
+        pizzaiolo2 = p;
+    }
+
+    public static Pizzaiolo getPizzaiolo2() {
+        return pizzaiolo2;
+    }
+
+    
 }
