@@ -2,7 +2,7 @@
 # Branches
 1. Abstract Factory
 - [x] exercicio1.1
-- [ ] exercicio1.2
+- [x] exercicio1.2
 2. Builder
 - [x] exercicio2.1
 - [ ] exercicio2.2
