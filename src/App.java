@@ -20,7 +20,7 @@ public class App {
 
         double option = Math.random();
 
-        if(option > 0.5) System.out.println("Hello World");
+        if(option > 0.5) factory.printScreen();
         if(option <= 0.5) factory.printFile();
 
         if(option > 0.5) System.out.println("Escrito na tela.");
