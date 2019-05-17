@@ -4,10 +4,10 @@
 - [x] exercicio1.1
 - [ ] exercicio1.2
 2. Builder
-- [ ] exercicio2.1
+- [x] exercicio2.1
 - [ ] exercicio2.2
 3. Factory Method
-- [ ] exercicio3.1
+- [x] exercicio3.1
 - [ ] exercicio3.2
 - [ ] exercicio3.3
 4. Singleton
