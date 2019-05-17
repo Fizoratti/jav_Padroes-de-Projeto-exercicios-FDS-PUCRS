@@ -3,20 +3,31 @@ import java.util.Scanner;
 import java.util.List;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.text.ParseException;
 
 public class App {
     public static void main(String args[]) {
+        System.out.println("# Exercicio 1.2");
 
         AbstractFactory factory = new ConcreteFactory();
 
-        int dia = args[0];
-        int mes = args[1];
-        int ano = args[2];
+        int dia = Integer.parseInt(args[0]);
+        int mes = Integer.parseInt(args[1]);
+        int ano = Integer.parseInt(args[2]);
 
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-mm-yyyy");
-        Date data = simpleDateFormat.parse(dia+"-"+mes+"-"+ano);
 
-        System.out.println("# Exercício 1.2");
+        try {
+            Date data = simpleDateFormat.parse(dia+"-"+mes+"-"+ano);
+            String dataString = simpleDateFormat.format(data);
+            System.out.println("Data: "+dataString);
+        }
+        catch (ParseException e) {
+            // Normal Auto-generated catch block
+            e.printStackTrace();
+        }
+
+
 
         
 
