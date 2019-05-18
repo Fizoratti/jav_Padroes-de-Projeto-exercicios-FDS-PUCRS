@@ -6,7 +6,7 @@ import java.lang.Math;
 public class App {
     public static void main(String args[]) {
 
-        System.out.println("# Exercício 1.1");
+        System.out.println("# Exercício 2.2");
 
         Scanner sc = new Scanner(System.in);
 		
