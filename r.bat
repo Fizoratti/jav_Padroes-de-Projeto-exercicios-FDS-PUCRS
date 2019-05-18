@@ -1,2 +1,2 @@
 cls
-@java -cp ./out/ App
+@java -cp ./out/ Main

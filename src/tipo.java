@@ -1,0 +1,3 @@
+enum tipo {
+	CLIENTE, SOCIO
+}
