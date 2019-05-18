@@ -6,12 +6,8 @@ import java.lang.Math;
 public class App {
     public static void main(String args[]) {
 
-        System.out.println("# Exercício 4.1");
+        System.out.println("# Exercício 0.0");
 
-        for (int i = 0; i < 10; i++) {
-            Incremental inc = new Incremental();
-            System.out.println(inc);
-         }
     }
 }
 
