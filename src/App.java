@@ -6,7 +6,7 @@ import java.lang.Math;
 public class App {
     public static void main(String args[]) {
 
-        System.out.println("# Exercício 3.1");
+        System.out.println("# Exercício 3.2");
 
         FactoryNome fabrica = new FactoryNome();
 		String n1 = "Sasso, Pedro";
