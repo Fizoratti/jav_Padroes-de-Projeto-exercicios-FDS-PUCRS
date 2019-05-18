@@ -1,5 +1,3 @@
-package pacote;
-
 public class Invertido extends NomeCompleto {
 	String nome;
 	private String cortes[] = new String[1];

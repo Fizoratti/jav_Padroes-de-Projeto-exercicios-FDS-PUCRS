@@ -8,7 +8,7 @@ public class App {
 
         System.out.println("# Exercício 3.1");
 
-        factoryNome fabrica = new factoryNome();
+        FactoryNome fabrica = new FactoryNome();
 		String n1 = "Sasso, Pedro";
 		String n2 = "Robsu Felipo";
 		

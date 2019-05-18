@@ -1,5 +1,3 @@
-package pacote;
-
 public abstract class NomeCompleto {
 
 	public String nome;
