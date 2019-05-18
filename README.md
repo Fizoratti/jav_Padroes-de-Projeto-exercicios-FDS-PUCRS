@@ -1,17 +1,19 @@
 ﻿
 # Branches
+0. Bar
+- [x] exercicio0.1
 1. Abstract Factory
 - [x] exercicio1.1
 - [x] exercicio1.2
 2. Builder
 - [x] exercicio2.1
-- [ ] exercicio2.2
+- [x] exercicio2.2
 3. Factory Method
 - [x] exercicio3.1
-- [ ] exercicio3.2
+- [x] exercicio3.2
 - [ ] exercicio3.3
 4. Singleton
-- [ ] exercicio4.1
+- [x] exercicio4.1
 
 # Enunciados
 ### 1. Abstract Factory
