@@ -1,7 +1,7 @@
 package pacote;
 
 
-public class Normal extends nomeCompleto {
+public class Normal extends NomeCompleto {
 	String nome;
 	private String cortes[] = new String[1];
 	
