@@ -6,25 +6,37 @@ import java.lang.Math;
 public class App {
     public static void main(String args[]) {
 
-        AbstractFactory factory = new ConcreteFactory();
-
         System.out.println("# Exercício 1.1");
 
-        System.out.println("(1) na tela ou (2) num arquivo");
+        Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Fa�a Seu Pedido");
+		System.out.println("Qual hamburguer voc� deseja:");
+		System.out.println("1 - Hamb�rguer");
+		System.out.println("2 - Cheeseburger");
+		String ham = sc.nextLine();
+		
+		System.out.println("Qual tamanho da batata:");
+		System.out.println("1 - Pequena");
+		System.out.println("2 - Media");
+		System.out.println("3 - Grande");
+		String bat = sc.nextLine();
+		
+		
+		System.out.println("Qual refrigerante voc� deseja:");
+		System.out.println("1 - Coca");
+		System.out.println("2 - Guaran�");
+		String brin = sc.nextLine();
 
-        /* Pulando a opção de escolher o método
-        int option = (new Scanner(System.in)).nextInt();
-        */
-
-        System.out.println("Gerando opcao randomica...");
-
-        double option = Math.random();
-
-        if(option > 0.5) factory.printScreen();
-        if(option <= 0.5) factory.printFile();
-
-        if(option > 0.5) System.out.println("Escrito na tela.");
-        if(option <= 0.5) System.out.println("Escrito no arquivo.");
-        
+		
+		Atendente atend = new Atendente();
+		PedidoBuilder pb = new Montador();
+		
+		atend.setpedidoBuilder(pb);
+		atend.criaPedido(ham, bat, brin);
+		
+		sc.close();
+		
+		System.out.println(atend.getPedido().toString());
     }
 }
